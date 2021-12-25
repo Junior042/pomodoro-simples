@@ -22,6 +22,7 @@ function start()
     {
         interval = setInterval(() => contaMin(1), 1000);
         protegeStart = !protegeStart;
+        document.querySelector('#alarme').stop();
     }
 };
 
@@ -44,6 +45,7 @@ function reset()
 
 function contaMin(num)
 {
+    
     estadoSeg -= num;
     if(estadoSeg < 1)
     {
@@ -51,9 +53,16 @@ function contaMin(num)
         estadoMin -= 1;
     }
     
+    
     if(estadoSeg <= 9) seg.innerText = `0${estadoSeg}`;
     else seg.innerText = estadoSeg;
-
+    
     if (estadoMin <= 9) min.innerText = `0${estadoMin}`;
     else min.innerText = estadoMin;
+
+    if(estadoMin < 0)
+    {
+        document.querySelector('#alarme').play();
+        reset();
+    }
 };

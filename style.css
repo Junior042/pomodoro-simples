@@ -1,0 +1,161 @@
+/*Link do design: https://gridfiti.com/wp-content/uploads/2021/08/AestheticPomodoro_HERO.jpg*/
+
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+    color: white;
+    font-family: 'Roboto';
+}
+
+body{
+    background-image: url('./fundo.webp');
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+main{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+header{
+    text-align: center;
+}
+
+section{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#cont-tipos p{
+    display: inline-block;
+    padding: 6px 12px;
+    border-radius: 20px;
+    border: 1.5px solid white;
+    cursor: pointer;
+    transition: all .6s;
+    font-weight: bold;
+}
+
+#cont-tipos p:hover{
+    background: white;
+    color: turquoise;
+    cursor: pointer;
+}
+
+#cont-contagem{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#cont-contagem #cont-numeros{
+    display: flex;
+    gap: 6px;
+}
+
+#cont-contagem #cont-numeros p{
+    font-size: 80px;
+    font-weight: 400;
+}
+
+#reset{
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border: 1.5px solid white;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .6s;
+    margin-left: 2%;
+}
+
+#reset svg{
+    cursor: pointer;
+    width: 80%;
+    transition: all .6s;
+}
+
+#reset svg:hover{
+    fill: turquoise;
+}
+
+#buttons{
+    display: flex;
+    gap: 5%;
+}
+
+#buttons button{
+    color: turquoise;
+    background: white;
+    font-size: 18px;
+    padding: 6px 34px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all .6s;
+}
+
+#buttons button:hover{
+    color: white;
+    background: transparent;
+    border: 1.5px solid white;
+}
+
+footer{
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+
+#search{
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    border-radius: 20px;
+    background: transparent;
+    outline: none;
+    border: 1.5px solid white;
+    cursor: text;
+    transition: all .6s;
+}
+
+#search::placeholder{
+    color: turquoise;
+    font-size: 12px;
+}
+
+#search::selection{
+    background: transparent;
+    color: turquoise;
+    font-size: 12px;
+}
+
+#search:hover{
+    background: white;
+}
+
+#btn-search{
+    color: turquoise;
+    padding: 10px;
+    border-radius: 20px;
+    background: transparent;
+    border: 1.5px solid white;
+    cursor: pointer;
+    transition: all .6s;
+}
+
+#btn-search:hover{
+    background: white;
+
+}

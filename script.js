@@ -13,6 +13,12 @@ function escolha()
     estadoMin = select;
     if (inputSearch <= 9) min.innerText = `0${inputSearch}`;
     else min.innerText = inputSearch;
+    document.querySelector('footer').classList.toggle('modal');
+}
+
+function abreModal()
+{
+    document.querySelector('footer').classList.toggle('modal')
 }
 
 
@@ -22,7 +28,6 @@ function start()
     {
         interval = setInterval(() => contaMin(1), 1000);
         protegeStart = !protegeStart;
-        document.querySelector('#alarme').stop();
     }
 };
 

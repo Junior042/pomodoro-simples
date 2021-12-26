@@ -34,6 +34,13 @@ section{
     align-items: center;
 }
 
+#cont-tipos{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
 #cont-tipos p{
     display: inline-block;
     padding: 6px 12px;
@@ -158,4 +165,9 @@ footer{
 #btn-search:hover{
     background: white;
 
+}
+
+
+.modal{
+    display: none;
 }
